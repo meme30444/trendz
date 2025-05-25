@@ -1,0 +1,84 @@
+/* General */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f8fa;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grid layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Video card */
+.video-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Cake video player styling */
+.cake-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+}
+
+.cake-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Play button overlay */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 18px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Video title */
+.video-card p {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* See More Button*/
+button {
+  background-color: rgb(3, 75, 230);
+  padding: 15px;
+  color: #f5f8fa;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
